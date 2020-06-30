@@ -141,7 +141,7 @@ body {
     content: url("images/icon.svg");
     margin-right: 16px;
 }
-@media (min-width: 768px) and (max-width: 1120px) {
+@media (min-width: 768px) and (max-width: 1119px) {
     .article__text--laptop {
         display: inline;
     }
