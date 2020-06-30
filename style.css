@@ -34,11 +34,11 @@ body {
 .button:hover {
     cursor: pointer;
 }
-.header__logo {
+.logo {
     align-self: center;
     margin-left: 16px;
 }
-.header__logo:hover {
+.logo:hover {
     cursor: pointer;
 }
 .main {
