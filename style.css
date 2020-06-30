@@ -179,6 +179,7 @@ body {
     }
     .article__text {
         max-width: 50%;
+        padding-right: 15px;
     }
     .header__block--right::before {
         content: "";
