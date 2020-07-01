@@ -3,6 +3,9 @@ body {
     padding: 0;
     font-family: "TT Lakes";
 }
+a {
+    text-decoration: none;
+}
 .header--mobile {
     height: 88px;
     display: flex;
