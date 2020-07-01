@@ -52,6 +52,7 @@ body {
     padding-left: 12px;
     letter-spacing: -0.6px;
     margin: 0; 
+    height: 40px;
 }
 .buttons__label {
     margin-top: 8px;
@@ -61,8 +62,8 @@ body {
     color: #1B1C21;
     font-weight: 510;
 }
-.buttons--hidden {
-    display: none;
+.buttons {
+    display: flex;
 }
 .buttons__button {
     display: flex;
@@ -108,10 +109,10 @@ body {
     background-color: #FFFFFF;
     cursor: pointer;
 }
-.article__text--laptop {
+.description--laptop {
     display: none;
 }
-.article__text--desktop {
+.description--desktop {
     display: none;
 } 
 .article {
@@ -120,7 +121,7 @@ body {
     justify-content: center;
     padding: 0px 16px;
 }
-.article__link {
+.read-more {
     height: 24px;
     padding: 16px 0px;
     font-size: 16px;
@@ -131,13 +132,13 @@ body {
     display: block;
     cursor: pointer;
 }
-.article__text {
+.description {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
 }
-.article__link::before {
+.read-more::before {
     content: url("images/icon.svg");
     margin-right: 16px;
 }
@@ -169,24 +170,17 @@ body {
     .article {
         flex-wrap: nowrap;
     }
-    .article__text--laptop {
+    .description--laptop {
         display: inline;
     }
-    .article__image-container {
+    .image-container {
         max-width: 50%;
         margin-left: 0px;
         padding-top: 15px;
     }
-    .article__text {
+    .description {
         max-width: 50%;
         padding-right: 15px;
-    }
-    .header__block--right::before {
-        content: "";
-        border: 1px solid #EAEAEA;
-        height: 30px;
-        margin-top: 4px;
-        display: flex;
     }
     
 }
@@ -201,15 +195,15 @@ body {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-    .article__text--desktop {
+    .description--desktop {
         display: inline;
     }
-    .article__image-container {
+    .image-container {
         margin-left: 0px;
         padding-top: 15px;
         max-width: 50%;
     }
-    .article__text {
+    .description {
         max-width: 50%;
     }
     .header {
@@ -223,7 +217,7 @@ body {
         padding-top: 42px;
         background-color: #F8F8F8;
     }
-    .buttons--hidden {
+    .buttons {
         display: flex;
     }
     .buttons__label {
@@ -235,5 +229,8 @@ body {
     .menu {
         flex-wrap: wrap;
         padding-top: 0px;
+    }
+    .main {
+        padding-top: 10px;
     }
 }
