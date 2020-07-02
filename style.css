@@ -31,11 +31,16 @@ a {
     width: 40px;
     height: 40px;
     border: 0px;
-    margin-left: 16px;
     vertical-align: text-top;
+    /*transition-duration: 1s;*/
+}
+.header__button{
+    margin-left: 16px;
 }
 .button:hover {
     cursor: pointer;
+    /*transform: rotate(360deg);*/
+    
 }
 .logo {
     align-self: center;
@@ -52,10 +57,12 @@ a {
     font-size: 28px;
     line-height: 40px;
     border-left: 4px solid #41F6D7;
-    padding-left: 12px;
     letter-spacing: -0.6px;
     margin: 0; 
     height: 40px;
+}
+.main__title, .header__title {
+    padding-left: 12px;
 }
 .buttons__label {
     margin-top: 8px;
@@ -81,11 +88,14 @@ a {
     scrollbar-width: none;
     overflow-y: hidden;
     margin: 0px;
-    padding-left: 16px;
-    padding-top: 20px;
+    
 }
 .menu::-webkit-scrollbar {
     width: 0px;
+}
+.main__menu {
+    padding-left: 16px;
+    padding-top: 20px;
 }
 .menu__item {
     border: 2px solid #F8F8F8;
@@ -112,13 +122,13 @@ a {
     background-color: #FFFFFF;
     cursor: pointer;
 }
-.description--laptop {
+.main__text--laptop {
     display: none;
 }
-.description--desktop {
+.main__text--desktop {
     display: none;
 } 
-.article {
+.main__description {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -126,7 +136,6 @@ a {
 }
 .read-more {
     height: 24px;
-    padding: 16px 0px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -135,7 +144,10 @@ a {
     display: block;
     cursor: pointer;
 }
-.description {
+main__read-more {
+    padding: 16px 0px;
+}
+.main__text {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
@@ -144,6 +156,9 @@ a {
 .read-more::before {
     content: url("images/icon.svg");
     margin-right: 16px;
+}
+.main__img {
+     width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
     .header--mobile {
@@ -170,18 +185,18 @@ a {
         display: flex;
         margin-left: 16px;
     }
-    .article {
+    .main__description {
         flex-wrap: nowrap;
     }
-    .description--laptop {
+    .main__text--laptop {
         display: inline;
     }
-    .image-container {
+    .main__image-container {
         max-width: 50%;
         margin-left: 0px;
         padding-top: 15px;
     }
-    .description {
+    .main__text {
         max-width: 50%;
         padding-right: 15px;
     }
@@ -194,19 +209,19 @@ a {
     .main .title {
         display: none;
     }
-    .article {
+    .main__description {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-    .description--desktop {
+    .main__text--desktop {
         display: inline;
     }
-    .image-container {
+    .main__image-container {
         margin-left: 0px;
         padding-top: 15px;
         max-width: 50%;
     }
-    .description {
+    .main__text {
         max-width: 50%;
     }
     .header {
