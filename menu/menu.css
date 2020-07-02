@@ -1,0 +1,170 @@
+body {
+    width: 320px;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+                -2px 0px 4px rgba(69, 79, 126, 0.02);
+    height: 100%;
+    position: absolute;
+}
+
+.header {
+    display: flex;
+}
+.header__button {
+    margin-right: 0;
+    margin-left: 24px;
+}
+
+.header__block:first-child .header__button:hover {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.header__block:last-child .header__button:hover {
+    animation-name: scale;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.main {
+    background-color: inherit;
+    padding-top: 24px;
+}
+.main__list {
+    list-style: none;
+    padding: 0;
+}
+.title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    border-left: 4px solid #FFFFFF;
+    color: #1B1C21;
+    font-weight: 500;
+}
+.main__link {
+    padding-left: 20px;
+    display: block;
+    height: 32px;
+    box-sizing: border-box;
+}
+.title:hover {
+    border-left: 4px solid #41F6D7;
+    cursor: pointer;
+    color: #7E7E82;
+}
+.main__item {
+    margin-bottom: 25px;
+    height: 32px;
+}
+.footer {
+    position: absolute;
+    bottom: 32px;
+}
+.footer__block {
+    margin-left: 8px;
+    width: 312px;
+}
+.footer__button {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    margin-right: 0 !important;
+}
+.footer__button:first-child:hover {
+    animation-name: call;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.footer__button:nth-child(2):hover {
+    animation-name: message;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.footer__button:last-child:hover {
+    transform: scale(1.2);
+    transition-duration: 0.7s;
+}
+.footer__email {
+    margin-left: 16px;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.footer__number {
+    margin-left: 16px;
+    display: block;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.footer__lang {
+    padding-left: 7px;
+    font-weight: 500;
+    bottom: 0px;
+}
+.footer__lang:first-child {
+    padding-left: 16px;
+}
+.footer__lang:hover {
+    color: #7E7E82;
+    cursor: pointer;
+}
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes scale {
+    to {
+        transform: scale(0.5);
+    }
+}
+@keyframes call {
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes message {
+    25% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@media (max-height: 800px) {
+    .footer {
+        position: relative;
+        padding-top: 32px;
+    }
+    body {
+        position: relative;
+    }
+}
+@media (min-width: 1120px) {
+    .title {
+        display: block !important;
+    }
+    .buttons {
+        display: block !important;
+    }
+}
