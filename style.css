@@ -45,6 +45,9 @@ a {
 }
 .logo {
     align-self: center;
+    
+}
+.header__logo {
     margin-left: 16px;
 }
 .logo:hover {
